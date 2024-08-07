@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "aca9665a-b254-4e67-9aa9-b2d5a0b92bba",
+		"name": "dev",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18212175"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/orders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Teh Manis\",\r\n  \"dine\": \"2\",\r\n  \"type\": \"3\",\r\n  \"category\": \"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"orders"
+					]
+				},
+				"description": "input pesanan"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/order-details/TRX17230151034321c7cefa4-be4f-4e23-a03d-2829d7360856",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/order-details/TRX17230151034321c7cefa4-be4f-4e23-a03d-2829d7360856",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"order-details",
+						"TRX17230151034321c7cefa4-be4f-4e23-a03d-2829d7360856"
+					]
+				},
+				"description": "mencari pesanan berdasarkan order id"
+			},
+			"response": []
+		}
+	]
+}
